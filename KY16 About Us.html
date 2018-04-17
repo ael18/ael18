@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="KaseY16.css">
+  <link rel="stylesheet" type="text/css" href="modalImg.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>KaseY16 About Us</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( document ).tooltip({
+            tooltipClass: "tooltip-styling"
+        });
+} );
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#000000");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#social-buttons").click(function(){
+        alert("You entered p1!");
+    },
+    function(){
+        alert("Bye! You now leave KaseY16!");
+    });
+});
+</script>
+</head>
+<body>
+
+
+  <table id="table1" style="width:500px">
+<th>
+  <img id="profilepic" src="profilepic.png" style=position:relative; top:-5px; height="100px";>
+</th>
+<th>
+  <h1>KaseY16</h1>
+  <h2>St Andrews Phone Cases</h2>
+</th>
+</table>
+
+  <div class="topnav">
+    <a class="active" href="KaseY16.html">Home</a>
+    <a href="KY16 About Us.html">About Us</a>
+  </div>
+<br>
+<br>
+</br>
+</br>
+
+<table id="background" style="width:40%" align="center">
+  <tr>
+<th>
+  <h4>What We Do</h4>
+  <p>Coming exclusively to St. Andrews!
+A brand new student-run business making simple yet stylish St Andrews phone cases. Updates on limited and exclusive editions available soon.</p>
+</th>
+
+<th>
+  <img id="myImg" src="cases.png" style="position:relative; top:-5px;">
+  
+<div id="myModal" class="modal">
+ 
+ 
+  <span class="close">&times;</span>
+ 
+  
+  <img class="modal-content" id="img01">
+ 
+  
+  <div id="caption"></div>
+</div>
+ 
+<script>
+
+var modal = document.getElementById('myModal');
+ 
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+ 
+
+var span = document.getElementsByClassName("close")[0];
+ 
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+</tr>
+</table>
+
+<br>
+<br>
+</br>
+</br>
+
+
+<div id="contactform">
+
+  <table id="table2" style="width:100%">
+<th>
+<h5>Contact Us</h5>
+<br>
+<p>St Andrews KY16, UK</p>
+<p>kasey16.standrews@gmail.com </p>
+</th>
+<th>
+<form>
+<br>
+<input type="text" name="name" value="Name" title="Please, type in your Name."><br>
+ <br>
+<input type="text" name="email" value="Email" title="Please, type in your E-Mail."><br>
+ <br>
+<input type="text" name="message" value="Message" title="Please, type in the Message." <br>
+<br>
+<input id="submit" type="Submit" value="Submit" title="Are you sure you want to submit?">
+
+</form>
+</th>
+</div>
+
+<ul>
+<div id='social-buttons'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<div class="container">
+  <footer class="bg-dark">
+    <div class="row">
+      <div class='col-md-4 text-center'>
+      </div>
+    </div>
+    <div class="row col-md-4 text-center">
+      <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+</div>
+</ul>
+
+</body>
+</html>
